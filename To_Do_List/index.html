@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <header>
+        <h1>T O D O</h1>
+    </header>
+    <section id="main">
+        <form id="form_input">
+            <input id="bg_input" onclick="hideText()" value="Create a new to do...">
+            </input>
+        </form>
+        <div id="box_to_do">
+            <ul id="list_div"></ul>
+            <div id="buttons_div">
+                <p id="qtd"></p>
+                <button class="button_all_active_completed" onclick="showAll()">all</button>
+                <button class="button_all_active_completed" onclick="showActive()">active</button>
+                <button class="button_all_active_completed" onclick="showCompleted()">completed</button>
+                <button id="button_clear" onclick="clearCompleted()">clear completed</button>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="toDo.js"></script>
+</body>
+
+</html>
